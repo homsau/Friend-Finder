@@ -1,3 +1,13 @@
+html {
+    background: url("/images/background.jpg");
+}
+body, main {
+    background: transparent !important;
+    margin-bottom: 90px; /* 40 for page margin + 50 for footer height */
+}
+.jumbotron {
+    background: rgba(255,255,255,0.5) !important;
+}
 .survey-container .user-input {
     display: flex;
     align-items: center;
@@ -33,6 +43,29 @@
 .modal.fade.in {
     opacity: 1 !important;
 }
+.btn-primary {
+    background: #34aab8 !important;
+    border-color: #34aab8 !important;
+}
+.btn-primary:hover {
+    background: rgba(52, 170, 184, 0.9) !important;
+    border-color: rgba(52, 170, 184, 0.9) !important;
+}
+hr {
+    border-top: 2px solid rgba(255,255,255,1) !important;
+}
 footer {
     text-align: center;
+    position: fixed;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}
+footer p a {
+    line-height: 50px;
+    color: #333;
+}
+footer p a:hover {
+    color: #333;
 }
