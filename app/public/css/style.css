@@ -1,0 +1,38 @@
+.survey-container .user-input {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .survey-container .user-input {
+        margin-bottom: 20px;
+    }
+}
+.survey-container input {
+    width: 100%;
+}
+.survey-container .fa:not(.fa-arrow-right) {
+    font-size: 30px;
+    padding-right: 10px;
+}
+.survey-container .question {
+    margin-bottom: 20px;
+}
+.survey-container .question select {
+    margin-right: 20px;
+    width: 38px;
+}
+.modal {
+
+}
+.modal-dialog {
+    top: 20% !important;
+}
+.modal-backdrop.fade.in {
+    opacity: 0.5 !important;
+}
+.modal.fade.in {
+    opacity: 1 !important;
+}
+footer {
+    text-align: center;
+}

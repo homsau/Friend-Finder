@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+
+    <!-- Added a link to Style and font awesome-->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Link to reset stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <!-- Added a link to JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="jumbotron">
+                <h1 style="text-align: center;"><i class="fas fa-user-friends"></i> Friend Finder</h1>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container survey-container">
+			<div class="row">
+                <div class="col-lg-12" style="text-align: center">
+                    <h1>Survey Questions</h1>
+                    <h3>About You</h3>
+                    <hr>
+                </div>
+                <div class="col-lg-2"></div>
+				<div class="col-lg-4 col-md-12">
+                    <h5>Name (Required)</h5>
+                    <div class="user-input">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" class="validate" placeholder="Your Name" id="userName">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5>Link to Photo Image (Required)</h5>
+                    <div class="user-input">
+                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        <input type="text" class="validate" placeholder="Photo Link" id="userPhoto">
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-12">
+                    <hr>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <h5 style="text-align: center; line-height: 1.75em; margin-bottom:20px;">Not at all (1) | Slightly (2) | Moderately (3) | Very (4) | Extremely (5)</h5>
+                    <div class="question">
+                        <select id="question1">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you enjoy outdoor activities?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question2">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you prefer to go to sleep early?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question3">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Are you an early riser?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question4">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you like to watch movies frequently?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question5">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Are you outgoing?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question6">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you like animals?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question7">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you enjoy going to concerts?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question8">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Are you a sports fan?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question9">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Do you like to exercise?</strong>
+                    </div>
+                    <div class="question">
+                        <select id="question10">
+                            <option value="" disabled selected>#</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <strong>Are you creative?</strong>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+
+                <!-- Survey Submit Button -->
+                <div style="margin: auto;">
+                    <button class="btn btn-primary btn-lg" type="submit" name="action" data-toggle="modal" data-target="#myModal" id="submitButton">Submit Responses <i class="fa fa-arrow-right" aria-hidden="true"></i></span></button>
+                </div>
+                <div id="test-results"><img src="" width"300px"></div>
+			</div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img width="250px" style="display: block; margin: auto;">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <hr>
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/homsau/Friend-Finder" target="_blank">GitHub Repo</a></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+		$("#submitButton").on("click", function(event) {
+			event.preventDefault();
+			var userInput = {
+				name: $("#userName").val().trim(),
+				photo: $("#userPhoto").val().trim(),
+				results:[
+					$("#question1").val().trim(),
+					$("#question2").val().trim(),
+					$("#question3").val().trim(),
+					$("#question4").val().trim(),
+					$("#question5").val().trim(),
+					$("#question6").val().trim(),
+					$("#question7").val().trim(),
+					$("#question8").val().trim(),
+					$("#question9").val().trim(),
+					$("#question10").val().trim()
+				]
+            };
+
+            $(".question select option").prop("selected", function() {
+                return this.defaultSelected;
+            });
+            document.getElementById("userName").value = "";
+            document.getElementById("userPhoto").value = "";
+
+            console.log("userInput = " + JSON.stringify(userInput));
+			$.post("/api/friends", userInput)
+      		.done(function(data) {
+                console.log("response = " + JSON.stringify(data));
+                // $("#test-results img").attr("src", data.friendPhoto);
+                $(".modal-title").html(data.friendName);
+                $(".modal-body img").attr("src", data.friendPhoto);
+            });
+		});
+	</script>
+</body>
+</html>
