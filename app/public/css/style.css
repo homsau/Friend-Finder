@@ -7,6 +7,16 @@ body, main {
 }
 .jumbotron {
     background: rgba(255,255,255,0.5) !important;
+    padding: 2rem 1rem !important;
+}
+.jumbotron.home-jumbotron {
+    margin-bottom: 0 !important;
+}
+.vertical-center {
+    position: absolute;
+    top: calc(50% + 35px);
+    transform: translateY(-50%);
+    max-width: 100% !important;
 }
 .survey-container .user-input {
     display: flex;
@@ -30,9 +40,6 @@ body, main {
 .survey-container .question select {
     margin-right: 20px;
     width: 38px;
-}
-.modal {
-
 }
 .modal-dialog {
     top: 20% !important;
